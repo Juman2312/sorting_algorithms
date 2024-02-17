@@ -15,13 +15,11 @@ void swap(listint_t *a, listint_t *b)
 		a->prev->next = b;
 	if (b->next)
 		b->next->prev = a;
-		a->next = b->next;
-		b->prev = a->prev;
-		a->prev = b;
-		b->next = a;
-
+	a->next = b->next;
+	b->prev = a->prev;
+	a->prev = b;
+	b->next = a;
 }
-
 
 /**
  * insertion_sort_list - Sorts a doubly linked list in ascending order using the insertion sort algorithm.
@@ -35,28 +33,25 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *i, *k;
 
-if (!list || !*list || !(*list)->next)
-	return;
+	if (!list || !*list || !(*list)->next)
+		return;
 
-i = (*list)->next;
-
-while (i)
-{
-	k = i;
-	i = i->next;
-
-	while (k && k->prev)
+	i = (*list)->next;
+	while (i)
 	{
-		if (k->prev->n > k->n)
+		k = i;
+		i = i->next;
+		while (k && k->prev)
 		{
-			swap(k->prev, k);
-			if (!k->prev)
-				*list = k;
-			print_list((const listint_t *)*list);
+			if (k->prev->n > k->n)
+			{
+				swap(k->prev, k);
+				if (!k->prev)
+					*list = k;
+				print_list((const listint_t *)*list);
+			}
+			else
+				k = k->prev;
 		}
-		else
-			k = k->prev;
 	}
 }
-
-}	
