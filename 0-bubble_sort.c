@@ -1,7 +1,7 @@
 #include "sort.h"
 
 
-void bubble_sort(int *array, size_t size);
+void bubble_sort(int *array, size_t size)
 {
 	int temp;
 	size_t i= 0;
