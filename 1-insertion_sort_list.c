@@ -5,7 +5,7 @@
  * @a: Pointer to the first node to be swapped.
  * @b: Pointer to the second node to be swapped.
  *
- * Description: This function swaps the positions of two nodes in a doubly linked list.
+ * Description: This function swaps the positions.
  * It updates the necessary prev and next pointers to perform the swap.
  */
 
@@ -22,7 +22,7 @@ void swap(listint_t *a, listint_t *b)
 }
 
 /**
- * insertion_sort_list - Sorts a doubly linked list in ascending order using the insertion sort algorithm.
+ * insertion_sort_list - Sorts a doubly linked list.
  * @list: Double pointer to the head of the doubly linked list.
  *
  * Description: This function sorts a doubly linked list in ascending order
