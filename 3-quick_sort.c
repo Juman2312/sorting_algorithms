@@ -1,12 +1,12 @@
 #include "sort.h"
 
 /**
- * swap - Swaps the positions of two elements in an array
+ * swaap - Swaps the positions of two elements in an array
  * @array: The array
  * @item1: Index of the first element
  * @item2: Index of the second element
  */
-void swap(int *array, ssize_t item1, ssize_t item2)
+void swaap(int *array, ssize_t item1, ssize_t item2)
 {
 	int tmp;
 
