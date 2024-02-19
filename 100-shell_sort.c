@@ -1,5 +1,20 @@
 #include "sort.h"
 
+/**
+ * swaapp - Swaps the positions of two elements in an array
+ * @array: The array
+ * @item1: Index of the first element
+ * @item2: Index of the second element
+ */
+void swaapp(int *array, int item1, int item2)
+{
+	int tmp;
+
+	tmp = array[item1];
+	array[item1] = array[item2];
+	array[item2] = tmp;
+}
+
 
 /**
  * shell_sort - Sorts an array of integers in ascending order
@@ -23,7 +38,7 @@ void shell_sort(int *array, size_t size)
 		{
 			for (index = i; index >= gap && (array[index] < array[index - gap]); index -= gap)
 			{
-				swaap(array, index, index - gap);
+				swaapp(array, index, index - gap);
 			}
 		}
 
