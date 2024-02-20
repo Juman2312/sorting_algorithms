@@ -36,5 +36,7 @@ listint_t *swap_node(listint_t *node, listint_t **list);
 void cocktail_sort_list(listint_t **list);
 void *_calloc(unsigned int nmemb, unsigned int size);
 void counting_sort(int *array, size_t size);
+void sift_down(int *array, size_t start, size_t end, size_t size);
+void heap_sort(int *array, size_t size);
 
 #endif
