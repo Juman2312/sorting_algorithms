@@ -28,5 +28,10 @@ void qs(int *array, ssize_t first, ssize_t last, int size);
 void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void swaapp(int *array, int item1, int item2);
+void *_calloc(unsigned int nmemb, unsigned int size);
+void merge(int *array, int *tmp, int start, int mid, int end);
+void merge_sort_recursive(int *array, int *tmp, int start, int end);
+void merge_sort(int *array, size_t size);
+
 
 #endif
