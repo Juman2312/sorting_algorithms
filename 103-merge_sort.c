@@ -77,7 +77,7 @@ void merge(int *array, int *tmp, int start, int mid, int end)
 }
 
 /**
- * merge_sort_recursive - recursively sorts the array using merge sort algorithm
+ * merge_sort_recursive - recursively sorts the array
  * @array: array to be sorted
  * @tmp: temporary array used for merging
  * @start: starting index of the subarray
